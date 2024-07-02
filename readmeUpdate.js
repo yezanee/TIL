@@ -1,7 +1,14 @@
 import { writeFileSync } from 'node:fs';
-import Parser from 'rss-parser';
+import Parser from "rss-parser";
 
+/**
+ * README.MD에 작성될 페이지 텍스트
+ * @type {string}
+ */
 let text = `# Hi there 👋
+
+[![Yejin's GitHub stats](https://github-readme-stats.vercel.app/api?username=yezanee)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=yezanee&layout=compact&hide=r,jupyter%20notebook,c%23&exclude_repo=roharui.github.io)](https://github.com/anuraghazra/github-readme-stats)
 
 ## 이런 환경에 익숙해요✍🏼
 
@@ -14,46 +21,40 @@ let text = `# Hi there 👋
 
 ## Contact me
 
+yezanee@gmail.com
+
 ## 📕 Latest Blog Posts
+<p>
+    <a href="https://yezaneeworld.tistory.com/"><img src="https://img.shields.io/badge/Blog-FF5722?style=flat-square&logo=Blogger&logoColor=white"/></a><br>
+</p>
 
 `;
 
 // rss-parser 생성
 const parser = new Parser({
-  headers: {
-    Accept: 'application/rss+xml, application/xml, text/xml; q=0.1',
-  },
-});
+    headers: {
+        Accept: 'application/rss+xml, application/xml, text/xml; q=0.1',
+    }});
 
 (async () => {
-  try {
+
     // 피드 목록
     const feed = await parser.parseURL('https://yezaneeworld.tistory.com/rss');
 
     // 최신 5개의 글의 제목과 링크를 가져온 후 text에 추가
     for (let i = 0; i < 5; i++) {
-      const item = feed.items[i];
-      
-      if (!feed.items[i]) {
-        break; // 더 이상 항목이 없으면 루프를 종료
-      }
-
-      const { title, link } = feed.items[i];
-      if (title && link) {
+        const {title, link} = feed.items[i];
         console.log(`${i + 1}번째 게시물`);
         console.log(`추가될 제목: ${title}`);
         console.log(`추가될 링크: ${link}`);
-        text += `<a href="${link}">${title}</a></br>`;
-      } else {
-        console.log(`항목 ${i}에 제목 또는 링크가 없습니다.`);
-      }
+        text += `<a href=${link}>${title}</a></br>`;
     }
 
     // README.md 파일 작성
-    writeFileSync('README.md', text, 'utf8');
-    console.log('업데이트 완료');
-  } catch (error) {
-    console.error('피드를 가져오는 중 오류 발생:', error);
-  }
+    writeFileSync('README.md', text, 'utf8', (e) => {
+        console.log(e)
+    })
+
+    console.log('업데이트 완료')
 })();
 
