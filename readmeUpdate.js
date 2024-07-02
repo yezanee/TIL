@@ -37,29 +37,40 @@ const parser = new Parser({
     }});
 
 (async () => {
+    try {
+        // 피드 목록
+        const feed = await parser.parseURL('https://yezaneeworld.tistory.com/rss');
 
-    // 피드 목록
-    const feed = await parser.parseURL('https://yezaneeworld.tistory.com/rss');
-
-    // 최신 5개의 글의 제목과 링크를 가져온 후 text에 추가
-    for (let i = 0; i < 5; i++) {
-        const item = feed.items[i];
-        if (!item) {
-            console.log(`${i + 1}번째 게시물이 존재하지 않습니다.`);
-            continue;
+        // 최신 5개의 글의 제목과 링크를 가져온 후 text에 추가
+        for (let i = 0; i < 5; i++) {
+            if (i >= feed.items.length) {
+                console.log(`${i + 1}번째 게시물이 존재하지 않습니다.`);
+                continue;
+            }
+            
+            const item = feed.items[i];
+            if (!item) {
+                console.log(`${i + 1}번째 게시물이 존재하지 않습니다.`);
+                continue;
+            }
+            const { title, link } = item;
+            if (!title || !link) {
+                console.log(`${i + 1}번째 게시물에 제목이나 링크가 없습니다.`);
+                continue;
+            }
+            console.log(`${i + 1}번째 게시물`);
+            console.log(`추가될 제목: ${title}`);
+            console.log(`추가될 링크: ${link}`);
+            text += `<a href=${link}>${title}</a></br>`;
         }
-        const { title, link } = item;
-        console.log(`${i + 1}번째 게시물`);
-        console.log(`추가될 제목: ${title}`);
-        console.log(`추가될 링크: ${link}`);
-        text += `<a href=${link}>${title}</a></br>`;
+
+        // README.md 파일 작성
+        writeFileSync('README.md', text, 'utf8', (e) => {
+            if (e) console.log(e);
+        });
+
+        console.log('업데이트 완료');
+    } catch (error) {
+        console.error('Error fetching or processing feed:', error);
     }
-
-    // README.md 파일 작성
-    writeFileSync('README.md', text, 'utf8', (e) => {
-        if (e) console.log(e);
-    });
-
-    console.log('업데이트 완료');
 })();
-
