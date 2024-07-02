@@ -43,7 +43,12 @@ const parser = new Parser({
 
     // 최신 5개의 글의 제목과 링크를 가져온 후 text에 추가
     for (let i = 0; i < 5; i++) {
-        const {title, link} = feed.items[i];
+        const item = feed.items[i];
+        if (!item) {
+            console.log(`${i + 1}번째 게시물이 존재하지 않습니다.`);
+            continue;
+        }
+        const { title, link } = item;
         console.log(`${i + 1}번째 게시물`);
         console.log(`추가될 제목: ${title}`);
         console.log(`추가될 링크: ${link}`);
@@ -52,9 +57,9 @@ const parser = new Parser({
 
     // README.md 파일 작성
     writeFileSync('README.md', text, 'utf8', (e) => {
-        console.log(e)
-    })
+        if (e) console.log(e);
+    });
 
-    console.log('업데이트 완료')
+    console.log('업데이트 완료');
 })();
 
