@@ -1,16 +1,22 @@
 {
-  "name": "user",
+  "name": "yezanee",
   "version": "1.0.0",
   "main": "readmeUpdate.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start" : "node readmeUpdate.js"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yezanee/TIL.git"
+  },
   "author": "",
   "license": "ISC",
   "description": "",
+  "bugs": {
+    "url": "https://github.com/rkdden/rkdden/issues"
+  },
+  "homepage": "https://github.com/yezanee/TIL#readme",
   "dependencies": {
     "rss-parser": "^3.13.0"
   }
