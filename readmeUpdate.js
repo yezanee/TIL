@@ -32,6 +32,8 @@ const parser = new Parser({
 
     // 최신 5개의 글의 제목과 링크를 가져온 후 text에 추가
     for (let i = 0; i < 5; i++) {
+      const item = feed.items[i];
+      
       if (!feed.items[i]) {
         break; // 더 이상 항목이 없으면 루프를 종료
       }
