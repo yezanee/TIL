@@ -17,7 +17,7 @@
 * [[백준 1890] 오답노트](https://github.com/yezanee/TIL/blob/main/Algorithm/CodingTest/baekjoon_1890.md)
 * [[백준 15486] 오답노트](https://github.com/yezanee/TIL/blob/main/Algorithm/CodingTest/baekjoon_15486.md)
 * [[백준 15989] 오답노트](https://github.com/yezanee/TIL/blob/main/Algorithm/CodingTest/baekjoon_15989.md)
-* [[백준] 11049 오답노트](https://github.com/yezanee/TIL/blob/main/Algorithm/CodingTest/baekjoon_11049.md)
+* [[백준 11049] 오답노트](https://github.com/yezanee/TIL/blob/main/Algorithm/CodingTest/baekjoon_11049.md)
 
 
 ### Java
