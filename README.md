@@ -14,14 +14,15 @@
   
 ## 목록
 ### Coding Test
-* [백준 1890 오답노트](https://github.com/yezanee/TIL/blob/main/Algorithm/CodingTest/baekjoon_1890.md)
-* [백준 15486 오답노트](https://github.com/yezanee/TIL/blob/main/Algorithm/CodingTest/baekjoon_15486.md)
-* [백준 15989 오답노트](https://github.com/yezanee/TIL/blob/main/Algorithm/CodingTest/baekjoon_15989.md)
-* [백준 11049 오답노트](https://github.com/yezanee/TIL/blob/main/Algorithm/CodingTest/baekjoon_11049.md)
+* [[백준 1890] 오답노트](https://github.com/yezanee/TIL/blob/main/Algorithm/CodingTest/baekjoon_1890.md)
+* [[백준 15486] 오답노트](https://github.com/yezanee/TIL/blob/main/Algorithm/CodingTest/baekjoon_15486.md)
+* [[백준 15989] 오답노트](https://github.com/yezanee/TIL/blob/main/Algorithm/CodingTest/baekjoon_15989.md)
+* [[백준] 11049 오답노트](https://github.com/yezanee/TIL/blob/main/Algorithm/CodingTest/baekjoon_11049.md)
 
 
 ### Java
-* [자바의 정석 2장 정리](https://github.com/yezanee/TIL/blob/main/JAVA/%EC%9E%90%EB%B0%94%EC%9D%98%EC%A0%95%EC%84%9D_2_variable.md)
+* **자바의 정석**
+  * [2장 변수](https://github.com/yezanee/TIL/blob/main/JAVA/%EC%9E%90%EB%B0%94%EC%9D%98%EC%A0%95%EC%84%9D/2_variable.md)
 
 
 ### Error
