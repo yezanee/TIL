@@ -21,7 +21,7 @@
 
 ### Java
 * **자바의 정석**
-  * [2장 변수](https://github.com/yezanee/TIL/blob/main/JAVA/%EC%9E%90%EB%B0%94%EC%9D%98%EC%A0%95%EC%84%9D/2_variable.md)
+  * [2장 변수](https://github.com/yezanee/TIL/blob/main/JAVA/%EC%9E%90%EB%B0%94%EC%9D%98%20%EC%A0%95%EC%84%9D/2%EC%9E%A5%20variable.md)
 
 
 
