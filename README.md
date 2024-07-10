@@ -7,11 +7,18 @@
   - 위와 같은 이유로 날짜는 커밋으로만 표기하고, 배운 내용 위주로 정리한다.
   
 ## 목록
+### Algorithm
+* [Recursion](https://github.com/yezanee/TIL/blob/main/Algorithm/Recursion.md)
+* [BackTracking](https://github.com/yezanee/TIL/blob/main/Algorithm/BackTracking.md)
+
 ### Coding Test
 * [[백준 1890] 오답노트](https://github.com/yezanee/TIL/blob/main/Algorithm/CodingTest/baekjoon_1890.md)
 * [[백준 15486] 오답노트](https://github.com/yezanee/TIL/blob/main/Algorithm/CodingTest/baekjoon_15486.md)
 * [[백준 15989] 오답노트](https://github.com/yezanee/TIL/blob/main/Algorithm/CodingTest/baekjoon_15989.md)
 * [[백준 11049] 오답노트](https://github.com/yezanee/TIL/blob/main/Algorithm/CodingTest/baekjoon_11049.md)
+* [[백준 11729] 오답노트](https://github.com/yezanee/TIL/blob/main/CodingTest/baekjoon_11729.md)
+* [[백준 1780] 오답노트](https://github.com/yezanee/TIL/blob/main/CodingTest/baekjoon_1780.md)
+* [[백준 1074] 오답노트](https://github.com/yezanee/TIL/blob/main/CodingTest/baekjoon_1074.md) 
 
 ### Error
 * [DB error : No database selected](https://github.com/yezanee/TIL/blob/main/Error/No_database_selected.md)
