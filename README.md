@@ -27,6 +27,7 @@
 * [[백준 2290] 오답노트](https://github.com/yezanee/TIL/blob/main/CodingTest/baekjoon_2290.md)
 * [[백준 16113] 오답노트](https://github.com/yezanee/TIL/blob/main/CodingTest/baekjoon_16113.md)
 * [[백준 8911] 오답노트](https://github.com/yezanee/TIL/blob/main/CodingTest/baekjoon_8911.md)
+* [[백준 6603] 오답노트](https://github.com/yezanee/TIL/blob/main/CodingTest/baekjoon_6603.md)
 
 ### Error
 * [DB error : No database selected](https://github.com/yezanee/TIL/blob/main/Error/No_database_selected.md)
